@@ -1,0 +1,394 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 100px;
+}
+
+.header__links {
+  display: flex;
+  gap: 40px;
+  text-transform: uppercase;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.button {
+  background-color: #4BA87D;
+  border: 1px solid #4BA87D;
+  padding: 10px 10px 10px 10px;
+  width: 168px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+  cursor: pointer;
+}
+.button:hover {
+  background: linear-gradient(0deg, #23724d 0%, #4BA87D 100%);
+}
+
+.header__container {
+  display: flex;
+  gap: 31px;
+}
+
+.main__title {
+  font-size: 59px;
+  width: 500px;
+  z-index: 2;
+}
+
+.main__container {
+  padding: 0px 176px 0 176px;
+  height: 652px;
+  display: flex;
+}
+
+.main__img {
+  left: 360px;
+  width: 680px;
+  height: 383px;
+}
+
+.main__title__container {
+  position: relative;
+  height: 600px;
+  display: flex;
+}
+
+.additional__text {
+  z-index: 3;
+  width: 350px;
+}
+
+.btn__try-now {
+  background-color: #4BA87D;
+  border: 1px solid #4BA87D;
+  padding: 10px 10px 10px 10px;
+  width: 168px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+  font-size: 15px;
+  cursor: pointer;
+}
+.btn__try-now:hover {
+  background: linear-gradient(0deg, #23724d 0%, #4BA87D 100%);
+}
+
+.btn__get-a-demo {
+  background-color: white;
+  border: 3px solid #4BA87D;
+  padding: 10px 10px 10px 10px;
+  width: 168px;
+  height: 55px;
+  text-transform: uppercase;
+  color: #4BA87D;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+  font-size: 15px;
+  cursor: pointer;
+}
+.btn__get-a-demo:hover {
+  background: linear-gradient(0deg, #23724d 0%, #4BA87D 100%);
+  color: white;
+}
+
+.main__buttons {
+  display: flex;
+  gap: 45px;
+}
+
+.RMC__container {
+  background-image: url("./assets/images/Vid Gray BG.jpg");
+  height: 531px;
+  padding: 131px;
+  display: flex;
+  justify-content: center;
+}
+
+.RMC__img__container {
+  display: flex;
+  justify-content: center;
+  background-image: url("./assets/images/Video.png");
+  width: 944px;
+  height: 531px;
+}
+
+#white__btn {
+  border-color: white;
+}
+#white__btn:hover {
+  background: linear-gradient(0deg, #23724d 0%, #4BA87D 100%);
+  color: white;
+  border-color: #4BA87D;
+}
+
+.RMC__text__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 61px;
+}
+
+.white__title {
+  color: white;
+  font-size: 60px;
+}
+
+.green__container {
+  background-image: url("./assets/images/Slanted Green BG.png");
+  height: 1400px;
+  background-size: cover;
+}
+
+.card {
+  height: 449px;
+  width: 320px;
+  background-color: white;
+}
+
+#card {
+  display: flex;
+  flex-direction: column;
+  align-self: end;
+}
+
+.card__text {
+  width: 220px;
+}
+
+.card__text__block {
+  padding: 0 30px 0 30px;
+}
+
+.card__link {
+  color: #4BA87D;
+  font-weight: 800;
+}
+
+.card__container {
+  display: flex;
+  gap: 47px;
+  height: 533px;
+  justify-content: center;
+}
+
+.text__container {
+  align-self: center;
+}
+
+.black__title {
+  width: 365px;
+  font-size: 44px;
+}
+
+.secondary__text {
+  width: 320px;
+  font-size: 19px;
+}
+
+.people__card__one {
+  background-image: url("./assets/images/CaseStudy1.png");
+  height: 239px;
+  width: 342px;
+  display: flex;
+  align-items: end;
+}
+
+.people__card__two {
+  background-image: url("./assets/images/CaseStudy2.png");
+  height: 239px;
+  width: 342px;
+  display: flex;
+  align-items: end;
+}
+
+.people__card__three {
+  background-image: url("./assets/images/CaseStudy3.png");
+  height: 239px;
+  width: 342px;
+  display: flex;
+  align-items: end;
+}
+
+.people__card__container {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+
+.Peoples__names {
+  padding: 0 0 0 20px;
+  color: white;
+  line-height: 10px;
+}
+
+.email {
+  height: 46px;
+  width: 400px;
+  border: 1px solid #9f9f9f;
+  border-radius: 5px;
+  padding: 0 0 0 20px;
+}
+
+.email::-moz-placeholder {
+  color: black;
+  font-size: 16px;
+}
+
+.email::placeholder {
+  color: black;
+  font-size: 16px;
+}
+
+.p__email__received {
+  padding: 0 0 0 20px;
+  color: #4BA87D;
+}
+
+.black__title__two {
+  width: 800px;
+  font-size: 44px;
+  text-align: center;
+}
+
+.email__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.email__block {
+  display: flex;
+  gap: 20px;
+}
+
+.email__text__block {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.brands__container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 367px;
+}
+
+.first__brand {
+  height: 33px;
+  width: 160px;
+  background-image: url("./assets/images/Logo1.png");
+}
+
+.second__brand {
+  width: 85px;
+  height: 44px;
+  background-image: url("./assets/images/Logo2.png");
+}
+
+.third__brand {
+  height: 48px;
+  width: 145px;
+  background-image: url("./assets/images/Logo3.png");
+}
+
+.fourth__brand {
+  height: 25px;
+  width: 141px;
+  background-image: url("./assets/images/Logo4.png");
+}
+
+.fifth__brand {
+  height: 22px;
+  width: 138px;
+  background-image: url("./assets/images/Logo5.png");
+}
+
+.brands__images__block {
+  display: flex;
+  gap: 64px;
+}
+
+.green__block {
+  background-color: #4BA87D;
+  height: 366px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn__white {
+  background-color: white;
+  border: 3px solid #4BA87D;
+  padding: 10px 10px 10px 10px;
+  width: 168px;
+  height: 55px;
+  text-transform: uppercase;
+  color: #4BA87D;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+  font-size: 15px;
+  cursor: pointer;
+}
+.btn__white:hover {
+  border: 3px solid #23724d;
+  color: #23724d;
+}
+
+.footer {
+  padding: 73px 200px 0 200px;
+}
+
+.footer__text__container {
+  display: flex;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.footer__main__container {
+  display: flex;
+  justify-content: space-between;
+  justify-self: center;
+  align-items: center;
+  width: 955px;
+}
+
+.logo__img {
+  display: flex;
+  justify-content: start;
+}
+
+.logo__container {
+  display: flex;
+  align-self: start;
+}
+
+.footer__line {
+  border: 1px solid #dbdbdb;
+  max-width: 1088px;
+}
+
+.footer__bottom__container {
+  padding: 0 77px 0 77px;
+  display: flex;
+  justify-content: center;
+  gap: 98px;
+}
+
+.footer__bottom__text {
+  display: flex;
+  gap: 35px;
+}/*# sourceMappingURL=styles.css.map */

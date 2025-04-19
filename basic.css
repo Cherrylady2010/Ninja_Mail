@@ -163,7 +163,7 @@ a {
   border-color: #4ba87d;
 }
 
-.RMC__text__container {
+.RMC__textContainer {
   align-items: center;
   justify-content: center;
   gap: 61px;
@@ -171,7 +171,7 @@ a {
   flex-direction: column;
 }
 @media (max-width: 768px) {
-  .RMC__text__container {
+  .RMC__textContainer {
     gap: 0;
   }
 }

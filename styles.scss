@@ -11,6 +11,10 @@ $breakpoint-mobile:320px;
     }
 }
 
+.wrapper {
+    width: 1100px;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -57,8 +61,7 @@ a {
 .light__green__btn{
     background-color:$light-green-color;
     border: 1px solid $light-green-color;
-    padding: 10px 10px 10px 10px;
-    width: 168px;
+    padding: 10px 20px 10px 20px;
     text-transform: uppercase;
     color: $white-color;
     font-weight: 800;
@@ -76,14 +79,10 @@ a {
 }
 
 .main__container {
-    padding: 0 176px 0 176px;
+    padding: 0 400px 0 400px;
     height: 652px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    @media (max-width:768px) {
-        padding: 0 0 0 30px;
-    }
 }
 .main__img {
     position: relative;
@@ -94,6 +93,9 @@ a {
     align-self: center;
     z-index: -2;
     box-shadow: 0 3px 16px 0 rgba(0, 0, 0, 0.16);
+    @include media ($breakpoint-tablet) {
+        display: none;
+       }
 }
 .main__title__container {
     position: relative;
@@ -101,44 +103,58 @@ a {
     display: flex;
 }
 .additional__text {
-    z-index: 3;
-    width: 350px;
-    font-family: $font-family;
+    font: {
+        family: $font-family;
+        weight: 500;
+        size: 19px;
+    }
     margin: 23px 0 35px 0;
+    
 }
-.green__btn__two {
+.green__btnTwo {
     background-color: $light-green-color;
     border: 1px solid $light-green-color;
-    padding: 10px 10px 10px 10px;
-    width: 168px;
+    padding: 10px 47px 10px 47px;
     text-transform: uppercase;
+    font: {
+        family: "Raleway";
+        weight: 800;
+        size: 21px;
+    }
     color: white;
-    font-weight: 800;
     letter-spacing: 0.07em;
-    font-size: 15px;
     cursor: pointer;
     &:hover {
         background: linear-gradient(0deg,  #23724d 0%, #4BA87D 100%);
     }
 }
+.email__btn {
+    background-color: $light-green-color;
+    border: 1px solid $light-green-color;
+    color: white;
+    font-size: 21px;
+    font-weight: 800;
+    padding: 10px 30px 10px 30px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+
+}
 .transparent__btn {
     background-color: $white-color;
     border: 3px solid $light-green-color;
-    padding: 10px 10px 10px 10px;
-    width: 168px;
-    height: 55px;
+    padding: 14px 20px 14px 20px;
+    font-size: 21px;
     text-transform: uppercase;
     color: $light-green-color;
     font-weight: 800;
     letter-spacing: 0.07em;
-    font-size: 15px;
     cursor: pointer;
     &:hover {
         background: linear-gradient(0deg,  #23724d 0%, #4BA87D 100%);
         color: $white-color;
     }
 }
-.input__btn__block {
+.email__inputBtnContainer {
     display: flex;
     gap: 26px;
     margin-top: 50px;
@@ -159,7 +175,7 @@ a {
     display: flex;
     justify-content: center;
 }
-.RMC__img__container {
+.RMC__imgContainer {
     display: flex;
     justify-content: center;
     background-image: url("./assets/images/Video.png");
@@ -175,7 +191,7 @@ a {
         border-color: $light-green-color;
     }
 }
-.RMC__text__container {
+.RMC__textContainer {
     align-items: center;
     justify-content: center;
     gap: 61px;
@@ -192,6 +208,7 @@ a {
 .green__container {
     background-image: url("./assets/images/Slanted\ Green\ BG.png");
     height: 1400px;
+    max-width: 1935px;
     background-size: cover;
     display: flex;
     align-items: center;
@@ -199,10 +216,10 @@ a {
     position: relative;
     top: -365px;
     @media (max-width:765px) {
-       width: 765px;
+       max-width: 765px;
     }
 }
-.card__container__two {
+.green__cardsContainer {
     display: flex;
     gap: 47px;
 }
@@ -211,7 +228,7 @@ a {
     width: 320px;
     background-color: $white-color;
     font-family: $font-family;
-    &__text__block {
+    &__textBlock {
         padding: 0 30px 0 30px;
         display: flex;
         flex-direction: column;
@@ -231,12 +248,11 @@ a {
     @include flex-column;
 }
 
-.card__container {
+.green__containers {
     display: flex;
     gap: 47px;
     height: 533px;
     justify-content: center;
-    
 }
 .card__text {
     width: 262px;
@@ -246,8 +262,7 @@ a {
 .text__container{
     align-self: center;
 }
-.black__title {
-    width: 365px;
+.blackTitle {
     font-size: 44px;
 }
 .secondary__text {
@@ -255,7 +270,7 @@ a {
     font-size: 19px;
     font-family: $font-family;
 }
-.first__member__card {
+.memberCard__first {
     background-image: url("./assets/images/CaseStudy1.png");
     height: 239px;
     width: 342px;
@@ -267,7 +282,7 @@ a {
         width: 200px;
        }
 }
-.second__member__card {
+.memberCard__second {
     background-image: url("./assets/images/CaseStudy2.png");
     height: 239px;
     width: 342px;
@@ -279,7 +294,7 @@ a {
         width: 200px;
     }
 }
-.third__member__card {
+.memberCard__third {
     background-image: url("./assets/images/CaseStudy3.png");
     height: 239px;
     width: 342px;
@@ -291,28 +306,28 @@ a {
         width: 200px;
     }
 }
-.members__cards__container {
+.members__cardsContainer {
     display: flex;
     justify-content: center;
     gap: 32px;
     font-family: $font-family;
     position: relative;
     z-index: 1;
-
+    margin-top: -500px;
 }
-.member__card__title {
+.memberCard__title {
     font-size: 34px;
     font-weight: 900;
 }
-.member__card__text {
+.memberCard__text {
     font-weight: 700;
 }
-.members__text__container {
+.members__textContainer {
     padding: 0 0 21px 20px;
     color: $white-color;
 }
 .email {
-    height: 46px;
+    height: 65px;
     width: 400px;
     border: 1px solid #9f9f9f;
     border-radius: 5px;
@@ -322,15 +337,17 @@ a {
     color: black;
     font-size: 16px;
 }
-.p__email__received {
+.email__bottomText {
     padding: 0 0 0 20px;
     color: $light-green-color;
-    font-family: $font-family;
-    font-weight: 500;
+    font: {
+        family: $font-family;
+        weight: 500;
+        size: 21px;
+    }
     margin-top: 20px;
 }
-.black__title__two {
-    width: 800px;
+.blackTitle__two {
     font-size: 44px;
     text-align: center;
     margin-top: 40px;
@@ -343,7 +360,7 @@ a {
     display: flex;
     gap: 20px;
 }
-.email__text__block{
+.email__itemsContainer{
     align-content: center;
     @include flex-column;
 }
@@ -392,12 +409,17 @@ a {
        justify-self: center;
       }
 }
-.brands__images__block {
-    display: flex;
-    gap: 64px;
-    margin-top: 71px;
-   @include media ($breakpoint-tablet) {
+.brands__imagesBlock {
     display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 71px;
+    align-self: center;
+    img {
+        justify-self: center;
+        align-self: center;
+    }
+
+   @include media ($breakpoint-tablet) {
     grid-template-columns: repeat(2,1fr);
     column-gap: 0;
     row-gap: 20px;
@@ -415,14 +437,12 @@ a {
 .btn__white {
         background-color: $white-color;
         border: 3px solid $light-green-color;
-        padding: 10px 10px 10px 10px;
-        width: 168px;
-        height: 55px;
+        padding: 18px 30px 18px 30px;
         text-transform: uppercase;
         color: $light-green-color;
         font-weight: 800;
         letter-spacing: 0.07em;
-        font-size: 15px;
+        font-size: 21px;
         cursor: pointer;
         &:hover {
             border: 3px solid #23724d;
@@ -435,12 +455,12 @@ a {
     @media (max-width:768px) {
         padding: 47px 0 0 0;
     }
-    &__text__container {
+    &__textContainer {
         display: flex;
         font-size: 19px;
         font-weight: 700;
     }
-    &__main__container {
+    &__mainContainer {
         display: flex;
         gap: 194px;
         justify-content: space-between;
@@ -456,7 +476,7 @@ a {
         gap: 10px;
         @include flex-column;
     }
-    &__bottom__container {
+    &__bottomContainer {
         padding: 0 77px 0 77px;
         display: flex;
         justify-content: center;
@@ -464,7 +484,7 @@ a {
         margin: 39px 0 48px 0;
         font-weight: 700;
     }
-    &__bottom__text{
+    &__bottomText{
         display: flex;
         gap: 35px;
     }
@@ -474,7 +494,7 @@ a {
     display: flex;
     justify-content: start;
 }
-.logo__container {
+.footer__logoContainer {
     display: flex;
     align-self: start;
 }

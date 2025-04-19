@@ -1,3 +1,7 @@
+.wrapper {
+  width: 1100px;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -43,8 +47,7 @@ a {
 .light__green__btn {
   background-color: #4BA87D;
   border: 1px solid #4BA87D;
-  padding: 10px 10px 10px 10px;
-  width: 168px;
+  padding: 10px 20px 10px 20px;
   text-transform: uppercase;
   color: white;
   font-weight: 800;
@@ -62,16 +65,10 @@ a {
 }
 
 .main__container {
-  padding: 0 176px 0 176px;
+  padding: 0 400px 0 400px;
   height: 652px;
   display: flex;
   align-items: center;
-  justify-content: center;
-}
-@media (max-width: 768px) {
-  .main__container {
-    padding: 0 0 0 30px;
-  }
 }
 
 .main__img {
@@ -84,6 +81,11 @@ a {
   z-index: -2;
   box-shadow: 0 3px 16px 0 rgba(0, 0, 0, 0.16);
 }
+@media (max-width: 768px) {
+  .main__img {
+    display: none;
+  }
+}
 
 .main__title__container {
   position: relative;
@@ -92,39 +94,48 @@ a {
 }
 
 .additional__text {
-  z-index: 3;
-  width: 350px;
   font-family: "Raleway";
+  font-weight: 500;
+  font-size: 19px;
   margin: 23px 0 35px 0;
 }
 
-.green__btn__two {
+.green__btnTwo {
   background-color: #4BA87D;
   border: 1px solid #4BA87D;
-  padding: 10px 10px 10px 10px;
-  width: 168px;
+  padding: 10px 47px 10px 47px;
   text-transform: uppercase;
-  color: white;
+  font-family: "Raleway";
   font-weight: 800;
+  font-size: 21px;
+  color: white;
   letter-spacing: 0.07em;
-  font-size: 15px;
   cursor: pointer;
 }
-.green__btn__two:hover {
+.green__btnTwo:hover {
   background: linear-gradient(0deg, #23724d 0%, #4BA87D 100%);
+}
+
+.email__btn {
+  background-color: #4BA87D;
+  border: 1px solid #4BA87D;
+  color: white;
+  font-size: 21px;
+  font-weight: 800;
+  padding: 10px 30px 10px 30px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .transparent__btn {
   background-color: white;
   border: 3px solid #4BA87D;
-  padding: 10px 10px 10px 10px;
-  width: 168px;
-  height: 55px;
+  padding: 14px 20px 14px 20px;
+  font-size: 21px;
   text-transform: uppercase;
   color: #4BA87D;
   font-weight: 800;
   letter-spacing: 0.07em;
-  font-size: 15px;
   cursor: pointer;
 }
 .transparent__btn:hover {
@@ -132,7 +143,7 @@ a {
   color: white;
 }
 
-.input__btn__block {
+.email__inputBtnContainer {
   display: flex;
   gap: 26px;
   margin-top: 50px;
@@ -157,7 +168,7 @@ a {
   justify-content: center;
 }
 
-.RMC__img__container {
+.RMC__imgContainer {
   display: flex;
   justify-content: center;
   background-image: url("./assets/images/Video.png");
@@ -175,7 +186,7 @@ a {
   border-color: #4BA87D;
 }
 
-.RMC__text__container {
+.RMC__textContainer {
   align-items: center;
   justify-content: center;
   gap: 61px;
@@ -197,6 +208,7 @@ a {
 .green__container {
   background-image: url("./assets/images/Slanted Green BG.png");
   height: 1400px;
+  max-width: 1935px;
   background-size: cover;
   display: flex;
   align-items: center;
@@ -206,11 +218,11 @@ a {
 }
 @media (max-width: 765px) {
   .green__container {
-    width: 765px;
+    max-width: 765px;
   }
 }
 
-.card__container__two {
+.green__cardsContainer {
   display: flex;
   gap: 47px;
 }
@@ -221,7 +233,7 @@ a {
   background-color: white;
   font-family: "Raleway";
 }
-.card__text__block {
+.card__textBlock {
   padding: 0 30px 0 30px;
   display: flex;
   flex-direction: column;
@@ -242,7 +254,7 @@ a {
   flex-direction: column;
 }
 
-.card__container {
+.green__containers {
   display: flex;
   gap: 47px;
   height: 533px;
@@ -259,8 +271,7 @@ a {
   align-self: center;
 }
 
-.black__title {
-  width: 365px;
+.blackTitle {
   font-size: 44px;
 }
 
@@ -270,7 +281,7 @@ a {
   font-family: "Raleway";
 }
 
-.first__member__card {
+.memberCard__first {
   background-image: url("./assets/images/CaseStudy1.png");
   height: 239px;
   width: 342px;
@@ -279,13 +290,13 @@ a {
   background-position: center;
 }
 @media (max-width: 768px) {
-  .first__member__card {
+  .memberCard__first {
     height: 200px;
     width: 200px;
   }
 }
 
-.second__member__card {
+.memberCard__second {
   background-image: url("./assets/images/CaseStudy2.png");
   height: 239px;
   width: 342px;
@@ -294,13 +305,13 @@ a {
   background-position: center;
 }
 @media (max-width: 765px) {
-  .second__member__card {
+  .memberCard__second {
     height: 200px;
     width: 200px;
   }
 }
 
-.third__member__card {
+.memberCard__third {
   background-image: url("./assets/images/CaseStudy3.png");
   height: 239px;
   width: 342px;
@@ -309,37 +320,38 @@ a {
   background-position: center;
 }
 @media (max-width: 765px) {
-  .third__member__card {
+  .memberCard__third {
     height: 200px;
     width: 200px;
   }
 }
 
-.members__cards__container {
+.members__cardsContainer {
   display: flex;
   justify-content: center;
   gap: 32px;
   font-family: "Raleway";
   position: relative;
   z-index: 1;
+  margin-top: -500px;
 }
 
-.member__card__title {
+.memberCard__title {
   font-size: 34px;
   font-weight: 900;
 }
 
-.member__card__text {
+.memberCard__text {
   font-weight: 700;
 }
 
-.members__text__container {
+.members__textContainer {
   padding: 0 0 21px 20px;
   color: white;
 }
 
 .email {
-  height: 46px;
+  height: 65px;
   width: 400px;
   border: 1px solid #9f9f9f;
   border-radius: 5px;
@@ -356,16 +368,16 @@ a {
   font-size: 16px;
 }
 
-.p__email__received {
+.email__bottomText {
   padding: 0 0 0 20px;
   color: #4BA87D;
   font-family: "Raleway";
   font-weight: 500;
+  font-size: 21px;
   margin-top: 20px;
 }
 
-.black__title__two {
-  width: 800px;
+.blackTitle__two {
   font-size: 44px;
   text-align: center;
   margin-top: 40px;
@@ -382,7 +394,7 @@ a {
   gap: 20px;
 }
 
-.email__text__block {
+.email__itemsContainer {
   align-content: center;
   display: flex;
   flex-direction: column;
@@ -444,14 +456,18 @@ a {
   }
 }
 
-.brands__images__block {
-  display: flex;
-  gap: 64px;
+.brands__imagesBlock {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
   margin-top: 71px;
+  align-self: center;
+}
+.brands__imagesBlock img {
+  justify-self: center;
+  align-self: center;
 }
 @media (max-width: 768px) {
-  .brands__images__block {
-    display: grid;
+  .brands__imagesBlock {
     grid-template-columns: repeat(2, 1fr);
     -moz-column-gap: 0;
          column-gap: 0;
@@ -473,14 +489,12 @@ a {
 .btn__white {
   background-color: white;
   border: 3px solid #4BA87D;
-  padding: 10px 10px 10px 10px;
-  width: 168px;
-  height: 55px;
+  padding: 18px 30px 18px 30px;
   text-transform: uppercase;
   color: #4BA87D;
   font-weight: 800;
   letter-spacing: 0.07em;
-  font-size: 15px;
+  font-size: 21px;
   cursor: pointer;
 }
 .btn__white:hover {
@@ -497,12 +511,12 @@ a {
     padding: 47px 0 0 0;
   }
 }
-.footer__text__container {
+.footer__textContainer {
   display: flex;
   font-size: 19px;
   font-weight: 700;
 }
-.footer__main__container {
+.footer__mainContainer {
   display: flex;
   gap: 194px;
   justify-content: space-between;
@@ -518,7 +532,7 @@ a {
   display: flex;
   flex-direction: column;
 }
-.footer__bottom__container {
+.footer__bottomContainer {
   padding: 0 77px 0 77px;
   display: flex;
   justify-content: center;
@@ -526,7 +540,7 @@ a {
   margin: 39px 0 48px 0;
   font-weight: 700;
 }
-.footer__bottom__text {
+.footer__bottomText {
   display: flex;
   gap: 35px;
 }
@@ -536,7 +550,7 @@ a {
   justify-content: start;
 }
 
-.logo__container {
+.footer__logoContainer {
   display: flex;
   align-self: start;
 }

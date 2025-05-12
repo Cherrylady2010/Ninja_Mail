@@ -17,8 +17,12 @@
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-    <header class="header">
-      <img src="./assets/images/NinjaMail Logo.png" alt="Main Logo" />
+    <header class="header wrapper_header">
+      <img
+        src="./assets/images/NinjaMail Logo.png"
+        alt="Main Logo"
+        class="main__logo"
+      />
       <div class="header__container">
         <ul class="header__links">
           <li><a href="#">features</a></li>
@@ -26,16 +30,19 @@
           <li><a href="#">services</a></li>
           <li><a href="#">pertners</a></li>
         </ul>
-        <button class="light__green__btn">sign up free</button>
+        <button class="btn__lightGreen">sign up free</button>
       </div>
     </header>
     <main>
       <section>
-        <div class="main__container">
-          <div>
+        <div class="wrapper wrapper_max">
+          <div class="main__container">
             <div class="square"></div>
             <div class="main__textContainer">
-              <h1 class="main__title">Create Stunning Email Campaigns</h1>
+              <h1 class="main__title">
+                Create Stunning<br />
+                Email Campaigns
+              </h1>
               <p class="additional__text">
                 Create and launch email campaigns that captivate<br />
                 your customers in just a few clicks.
@@ -47,15 +54,13 @@
               </div>
             </div>
             <div class="pink__rhombus"></div>
-          </div>
-          <div class="main__img__container">
             <div class="circle"></div>
             <img
               src="./assets/images/photo hero.jpg"
               alt="hero photo"
               class="main__img"
             />
-            <div id="circle"></div>
+            <div class="gray__square"></div>
             <div class="dark__rhombus"></div>
           </div>
         </div>
@@ -117,19 +122,19 @@
             </div>
           </div>
           <div class="members__cardsContainer">
-            <div class="memberCard__first">
+            <div class="memberCard" id="memberCard__first">
               <div class="members__textContainer">
                 <h2 class="memberCard__title">Frankie</h2>
                 <p class="memberCard__text">Member since 2016</p>
               </div>
             </div>
-            <div class="memberCard__second">
+            <div class="memberCard" id="memberCard__second">
               <div class="members__textContainer">
                 <h2 class="memberCard__title">Camile</h2>
                 <p class="memberCard__text">Member since 2012</p>
               </div>
             </div>
-            <div class="memberCard__third">
+            <div class="memberCard" id="memberCard__third">
               <div class="members__textContainer">
                 <h2 class="memberCard__title">Elayne</h2>
                 <p class="memberCard__text">Member since 2018</p>
@@ -157,7 +162,6 @@
           </div>
         </div>
       </section>
-      <section></section>
       <section>
         <div class="brands__container">
           <h2 class="blackTitle" id="black__title">
